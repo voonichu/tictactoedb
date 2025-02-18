@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimax Tic Tac Toe</title> <!--Sets title-->
+
+    <!--Links font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css"> <!--Links CSS file-->
+</head>
+
+<body>
+    <h1>Tic Tac Toe</h1>
+    <div class="startgame"> <!--Buttons to choose difficulty-->
+        <button class="easyMode" onClick="easyMode()"><div class="buttonText">Easy</div></button>
+        <button class="hardMode" onClick="hardMode()"><div class="buttonText">Hard</div></button>
+    </div>
+    
+    <table>
+        <tr> <!--Top Row (Cells 0, 1, 2)-->
+            <td class="cell" id="0"></td>
+            <td class="cell" id="1"></td>
+            <td class="cell" id="2"></td>
+        </tr>
+        <tr> <!--Middle Row (Cells 3, 4, 5)-->
+            <td class="cell" id="3"></td>
+            <td class="cell" id="4"></td>
+            <td class="cell" id="5"></td>
+        </tr>
+        <tr> <!--Bottom Row (Cells 6, 7, 8)-->
+            <td class="cell" id="6"></td>
+            <td class="cell" id="7"></td>
+            <td class="cell" id="8"></td>
+        </tr>
+    </table>
+    <div class="endgame">
+        <div class="text"></div>    
+        <button onClick="restart()"><div class="buttonText">Replay</div></button> <!--Restart Button-->
+    </div>
+
+    <div class="name">
+        <form id="dataform">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="leaderboard">
+        <h2>Top 10 Players</h2>
+        <div id="leaderboard-list">
+            <!-- Leaderboard will be dynamically populated here -->
+        </div>
+    </div>
+
+
+
+    <!--Links Javascript file-->
+    <script src="script.js"></script> 
+</body>
+</html>

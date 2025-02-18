@@ -1,0 +1,138 @@
+h1 { /* Sets h1 font and centers it */
+    font-family: "Bitter", "Times New Roman", cursive;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+
+.buttonText {
+    font-family: "Bitter", "Times New Roman", cursive;
+    font-weight: bold;
+    margin: 0px;
+}
+
+button {
+    background-color: white;
+    border: 1px solid black;
+    outline: 1px ridge black;
+    border-radius: 2rem;
+}
+
+.name {
+    display: hidden;
+    text-align: center;
+    font-family: "Bitter", "Times New Roman", cursive;
+}
+
+#submit {
+    margin-top: 40px;
+}
+
+td { /* Sets each table element to have a board, changes width and height, aligns text and table, changes font and size and changes cursor to a pointer when hovered */
+    border: 2px solid #333;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: "Bitter", "Times New Roman", cursive;
+    font-size: 70px;
+    cursor: pointer;
+}
+
+table { /* collapses table to give criss cross effect */
+    border-collapse: collapse;
+    position: absolute;
+    left: 50%;
+    margin-left: -155px;
+    top: 160px;
+}
+
+table tr:first-child td { /* Removes top border to give tic tac toe board effect */
+    border-top: 0;
+}
+
+table tr:last-child td { /* Removes bottom border to give tic tac toe effect */
+    border-bottom: 0;
+}
+
+table tr td:first-child { /* Removes left border to give tic tac toe effect */
+    border-left: 0;
+}
+
+table tr td:last-child { /* Removes right border to give tic tac toe effect */
+    border-right: 0;
+}
+
+.easyMode { /* Makes easy mode button slightly bigger and spaces it */
+    font-size: 14px;
+    margin-right: 25px
+}
+
+.hardMode { /* Makes hard mode button slightly bigger and spaces it */
+    font-size: 14px;
+    margin-left: 25px;
+}
+
+.startgame { /* Creates a backdrop for startgame section in html file (default shown) */
+    display: hidden;
+    width: 200px;
+    top: 20px;
+    background-color: rgba(72, 40, 214);
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 2em;
+    font-family: "Bitter", "Times New Roman", cursive;
+    z-index: 0;
+}
+
+.endgame { /* Creates a backdrop for endgame section in html file (default hidden) */
+    display: none;
+    width: 200px;
+    top: 200px;
+    background-color: rgba(205, 133, 63, 0.8);
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 2em;
+    font-family: "Bitter", "Times New Roman", cursive;
+}
+
+.leaderboard {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    margin: 20px auto;
+    margin-left: -160px;
+    left: 50%;
+    position: absolute;
+    top: 470px;
+    font-family: "Bitter", "Times New Roman", cursive;
+}
+
+.leaderboard h2 {
+    text-align: center;
+    margin-top: 0;
+    font-family: "Bitter", "Times New Roman", cursive;
+}
+
+.player {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.player span {
+    font-weight: bold;
+}
